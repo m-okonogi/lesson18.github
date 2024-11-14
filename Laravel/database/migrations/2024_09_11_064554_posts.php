@@ -3,7 +3,6 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-
 use Illuminate\Support\Facades\DB;
 
 return new class extends Migration
@@ -15,7 +14,7 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
 
-            $table->increments('id');
+            $table->integer('id', true)->unsigned()->length(11);
             $table->string('user_name', 255);
             $table->string('contents', 255);
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));

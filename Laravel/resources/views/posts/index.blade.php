@@ -8,7 +8,7 @@
   <p class="pull-right"><a class="btn btn-success" href="/create-form">新規投稿</a></p>
 
   <!-- 検索バー -->
-  <form action="{{ route('posts.index') }}" method="GET">
+  <form action="{{ url('/index') }}">
     <div class="form-group">
       <input type="text" name="search" class="form-control" placeholder="キーワードを入力してください" value="{{ request('search') }}">
     </div>

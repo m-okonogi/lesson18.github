@@ -143,7 +143,7 @@ return [
         'array' => ':attributeは:size個指定してください。',
     ],
     'starts_with' => ':attributeには、:valuesのどれかで始まる値を指定してください。',
-    'string' => ':attributeは文字列を指定してください。',
+    'string' => '投稿内容は文字列を指定してください。',
     'timezone' => ':attributeには、有効なゾーンを指定してください。',
     'unique' => ':attributeの値は既に存在しています。',
     'uploaded' => ':attributeのアップロードに失敗しました。',
